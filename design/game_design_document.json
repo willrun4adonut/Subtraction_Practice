@@ -1,0 +1,111 @@
+{
+  "title": "Subtract Lab",
+  "hook": "Master column subtraction place values",
+  "game_overview": "A 4th-grade educational math game where players configure multi-digit subtraction and master step-by-step column regrouping.",
+  "artstyle": "cartoon",
+  "genre": "puzzle",
+  "winning_condition": "Successfully solve all 5 subtraction problems in a round using accurate column calculations and proper regrouping steps.",
+  "losing_condition": "Exceeding the maximum mistake tolerance of 5 incorrect digit submissions in a single session.",
+  "player_mode": "single_player",
+  "supported_orientations": [
+    "landscape",
+    "wide",
+    "square"
+  ],
+  "input_methods": [
+    "mouse",
+    "touch",
+    "keyboard"
+  ],
+  "score_options": {
+    "score_type": "points",
+    "score_order": "higher_is_better"
+  },
+  "low_end_device_support": true,
+  "mobile_playable": true,
+  "tv_playable": false,
+  "language": [
+    "en"
+  ],
+  "content_descriptors": [],
+  "controls": [
+    {
+      "input": "Number Keys (0-9) / Virtual Numpad",
+      "action": "Enter subtraction results and scratchpad regrouping values into active column boxes."
+    },
+    {
+      "input": "Backspace / Delete",
+      "action": "Clear the current input cell."
+    },
+    {
+      "input": "Enter / Submit Button",
+      "action": "Confirm entry for the highlighted column cell."
+    },
+    {
+      "input": "Mouse Click / Touch Tap",
+      "action": "Select minuend/subtrahend digit counts on the start screen and tap digit inputs or hints."
+    }
+  ],
+  "sections": [
+    {
+      "title": "Design Pillars",
+      "content": "1. Scaffolding & Accuracy: Guide students through standard column subtraction algorithms from right to left (ones to hundred-thousands). 2. Explicit Regrouping Mastery: Require students to write out borrow values and adjust donor digits before calculating differences. 3. Positive Reinforcement: Cheerful, non-punitive feedback with celebration particles and math mastery streak rewards.",
+      "summary": "Core pedagogical and engagement principles."
+    },
+    {
+      "title": "Core Loop",
+      "content": "On the initial main screen, the student chooses the length of the top number (4, 5, or 6 digits) and the bottom number (3, 4, 5, or 6 digits, clamped to not exceed the top number). The game generates a valid problem (ensuring top >= bottom). Playfield loads the standard vertical layout with place value columns. The game focuses on the rightmost unsolved column (ones). If minuend < subtrahend, the player must complete the regrouping step by entering the borrowed-from digit's new value in the top scratchpad box and the current digit's boosted value (+10) in its borrow box before computing the difference. Once resolved, the active focus advances leftward to the next column. When all digits are solved, fireworks celebrate the correct solution and the player proceeds to the next challenge.",
+      "summary": "Setup, step-by-step column solving, and mastery celebration."
+    },
+    {
+      "title": "Core Mechanics",
+      "content": "1. Configuration Selector: Main setup page allows independent selection of minuend digits (4, 5, 6) and subtrahend digits (3, 4, 5, 6). 2. Strict Column-by-Column Order: Only the active column is unlocked, moving right to left. 3. Mandatory Regrouping Step: When borrowing is needed, input shifts to the regrouping row above the numbers. The player must enter the crossed-out reduced value in the left column and the regrouped value (original digit + 10) in the current column before solving. 4. Instant Pedagogical Verification: Incorrect entries trigger helpful prompts (e.g. 'Can we take 7 from 4? We need to borrow 1 ten!') without harsh penalties.",
+      "summary": "Configuration screen, column progression, and explicit borrowing protocol."
+    },
+    {
+      "title": "Movement & Scrolling Alignment",
+      "content": "Scrolling Axis: Fixed static screen without scrolling. Asset Orientation Baseline: Horizontal alignment with place values strictly spaced from hundred-thousands on the far left down to ones on the far right. Camera Behavior: Static locked camera keeping the whiteboard subtraction pad, regrouping track, and virtual numpad comfortably visible.",
+      "summary": "Fixed viewport layout with structured horizontal place value alignment."
+    },
+    {
+      "title": "Visual Hierarchy & Layering",
+      "content": "Layer Separation: Background layer features a soft pastel classroom chalkboard and lab shelves in low contrast. Playfield layer highlights the active column with bright amber/gold borders and clean dark high-contrast digits. Regrouping scratchpad boxes appear above each minuend column with clear strike-through animations. HUD Overlay: Score, streak count, problem counter, and digit place headers (Ones, Tens, Hundreds, Thousands, etc.) stay fixed at the top.",
+      "summary": "Clean math lab interface with prominent active-column highlights."
+    },
+    {
+      "title": "Characters & Enemies",
+      "content": "Professor Hoot, a friendly cartoon owl tutor wearing round spectacles and a lab coat, provides encouraging speech bubbles, celebratory cheers on correct regrouping, and helpful hints when students need guidance.",
+      "summary": "Friendly math lab professor mascot."
+    },
+    {
+      "title": "Fairness Tools",
+      "content": "Clear place value headers (1s, 10s, 100s, 1,000s, 10,000s, 100,000s) assist conceptual understanding. A 'Hint' button explains the current borrow or subtraction step if the student is stuck. Numbers are color-coded to eliminate visual confusion.",
+      "summary": "Educational scaffolds and place value labels."
+    },
+    {
+      "title": "Juice & Game Feel",
+      "content": "Anticipation Juice: Bouncing focus pulse on the active column and interactive numpad buttons. State Change Juice: Satisfying strikethrough pencil animation and green badge pop when borrow boxes are filled correctly. Impact Juice: Golden star particle fountain and fanfare chime when a full multi-digit problem is completed.",
+      "summary": "Tactile feedback for math operations."
+    },
+    {
+      "title": "Social Mechanics & Audience",
+      "content": "Designed specifically for elementary grade 4 mathematics learners practicing multi-digit subtraction with regrouping. Features local streak badges and report card summaries showing accuracy and problems completed.",
+      "summary": "Targeted at 4th-grade elementary school students."
+    },
+    {
+      "title": "Accessibility",
+      "content": "High contrast place value cells, large legible typography, complete on-screen virtual keypad for tablet and touch users, full physical keyboard support for desktop, and gentle audio cues with toggle controls.",
+      "summary": "High readability, keyboard and touch support."
+    },
+    {
+      "title": "Structural Integrity",
+      "content": "Main Setup Screen (Minuend Digits 4-6, Subtrahend Digits 3-6) -> Practice Playfield (5 problems per session) -> Session Completion Summary Screen with star rating and option to change digit lengths or play again.",
+      "summary": "Seamless educational flow from setup to practice to results."
+    },
+    {
+      "title": "Virtual Touch Controls Implementation",
+      "content": "Render an on-screen responsive numeric keypad (0-9, Backspace, Clear, Submit) positioned conveniently below the calculation pad on mobile and tablet displays. Ensure touch-none and pointer-events-auto on interactive buttons to prevent viewport scrolling.",
+      "summary": "On-screen numeric keypad and interactive cells."
+    }
+  ]
+}

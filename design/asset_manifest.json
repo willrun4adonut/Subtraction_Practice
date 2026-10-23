@@ -1,0 +1,72 @@
+[
+  {
+    "id": "reward_gold_star",
+    "name": "Math Mastery Star",
+    "art_style": "cartoon",
+    "category": null,
+    "media_type": "image_other",
+    "description": "Math Mastery Star",
+    "aspect_ratio": "1:1",
+    "usage": "Used in celebratory animations, streak counters, and the level completion screen.",
+    "chroma_key": true,
+    "prompt": "A symmetrical five-pointed golden reward star with rounded polished beveled tips, glowing metallic sheen and cheerful sparkling highlights, centered with generous spatial margins, side-profile view, zero commercial icons, new design, completely independent styling",
+    "actions": null,
+    "resolution": "1K"
+  },
+  {
+    "id": "icon_pencil_cross",
+    "name": "Scratchpad Pencil Icon",
+    "art_style": "cartoon",
+    "category": null,
+    "media_type": "image_other",
+    "description": "Scratchpad Pencil Icon",
+    "aspect_ratio": "1:1",
+    "usage": "UI indicator for regrouping/borrowing phase in column subtraction.",
+    "chroma_key": true,
+    "prompt": "A vibrant yellow wooden number two pencil with a clean pink rubber eraser tip, oriented diagonally, clean bold cartoon outlines, centered with generous spatial margins, side-profile view, zero commercial icons, new design, completely independent styling",
+    "actions": null,
+    "resolution": "1K"
+  },
+  {
+    "id": "bg_math_lab",
+    "name": "Math Lab Classroom Background",
+    "art_style": "cartoon",
+    "category": null,
+    "media_type": "image_background",
+    "description": "Math Lab Classroom Background",
+    "aspect_ratio": "16:9",
+    "usage": "Static background layer for the entire game viewport.",
+    "chroma_key": false,
+    "prompt": "A cheerful cozy elementary school math classroom and science laboratory with warm pastel wooden bookshelves, a neat slate chalkboard with faint place value guides, colorful abacus on the side, soft warm ambient lighting, zero commercial icons, new design, completely independent styling",
+    "actions": null,
+    "resolution": "1K"
+  },
+  {
+    "id": "bgm_math_lab",
+    "name": "Subtract Lab BGM",
+    "art_style": "cartoon",
+    "category": null,
+    "media_type": "music",
+    "description": "Subtract Lab BGM",
+    "aspect_ratio": "1:1",
+    "usage": "Seamless background audio loop during setup and calculation gameplay.",
+    "chroma_key": false,
+    "prompt": "85 BPM, lighthearted cozy educational puzzle music, playful wooden marimba melodies, gentle acoustic upright bass, soft ukulele strums, light glockenspiel chimes, calm inspiring C major key, gentle rhythm, seamless loop",
+    "actions": null,
+    "resolution": "1K"
+  },
+  {
+    "id": "mascot_prof_owl",
+    "name": "Professor Hoot Mascot",
+    "art_style": "cartoon",
+    "category": null,
+    "media_type": "image_other",
+    "description": "Professor Hoot Mascot",
+    "aspect_ratio": "1:1",
+    "usage": "Displayed beside the problem whiteboard to provide cheerful speech bubble hints and encouragement.",
+    "chroma_key": true,
+    "prompt": "A squat spherical cartoon owl tutor with a rounded pear-shaped body, oversized round spectacles, a tiny scholarly graduation cap, and a miniature white laboratory coat, centered with generous spatial margins, side-profile view, zero commercial icons, new design, completely independent styling",
+    "actions": null,
+    "resolution": "1K"
+  }
+]
